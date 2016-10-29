@@ -5,8 +5,8 @@ import java.util.Arrays;
 public class Map {
 	
 	private static int mapW=32,mapH=16;
-	private static short[] map = //new short[mapW*mapH];
-		{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+	private static short[] map = new short[mapW*mapH];
+		/*{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 		0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 		0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 		0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -21,9 +21,10 @@ public class Map {
 		0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,
 		0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,3,3,3,3,0,0,0,0,0,0,
 		0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,3,0,0,0,0,0,0,0,0,0,0,
-		0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+		0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};*/
+	
 	public static void wipeMap(){
-		Arrays.fill(map, (byte) 0);
+		Arrays.fill(map, /*(byte)*/ (short) 0);
 	}
 	
 	public static int getMapWidth(){
@@ -72,13 +73,8 @@ public class Map {
 		int startY = posY/Blocks.getSize();
 		int endX = (posX+width)/Blocks.getSize();
 		int endY = (posY+height)/Blocks.getSize();
-		//int endX = (posX+width)/Blocks.getSize()+1^(((posX+width)%Blocks.getSize())/(Blocks.getSize()));
-		//int endY = (posY+height)/Blocks.getSize()+0^((Blocks.getSize()-((((posY+height)%Blocks.getSize()))))
-		//		/(Blocks.getSize()));
 		if((posY+height)%Blocks.getSize()!=0)endY++;
 		if((posX+width)%Blocks.getSize()!=0)endX++;
-		//int endY = (posY+height+((posY+height)%Blocks.getSize()))
-		//		/Blocks.getSize();
 		for(int i = startX;i < endX;i++){
 			if(i>=mapW||i<=-1)return true;
 			for(int n = startY; n < endY;n++){
