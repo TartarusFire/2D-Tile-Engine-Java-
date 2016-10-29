@@ -1,3 +1,9 @@
+Version 1.0.0
+Get an orignal version at: https://github.com/TartarusFire/2D-Tile-Engine-Java-/
+Source code at: https://github.com/TartarusFire/2D-Tile-Engine-Java-/
+License should be included within the .jar or the redistribution
+Copyright is retained to (c) TartarusFire
+
 # 2D Tile Engine [Java]
 [Easily Convertible]
 A lightweight jar or series of files that allows for a visual display of a map of tiles.
@@ -29,7 +35,26 @@ To Be Added
   - The total block limit is one unsigned short or 2^16-1 different blocks
   
 • Hitbox Engine
-  - Allows for teh creation of a Hitbox Object if you don't want to hardcode a few values in your own Character class
+  - Allows for the creation of a Hitbox Object if you don't want to hardcode a few values in your own Character class
   
 • Lightweight
   - pretty much just a few objects that allow for easy versatility
+
+
+# Installation Instructions
+  • JAR
+    - For use with Eclipse:
+      1) Right click on your project folder
+      2) Click Preferences
+      3) Look in the list for 'Java Build Path'
+      4) Click on the tab 'Libraries'
+      5) Click Add External Jar
+        - Find and add the external JAR
+      6) Use this syntax to use the JAR:
+        import tftileengine.*;
+        - Read the JavaDoc For More Information
+
+  • Compiling the source
+    1) Make sure to include all files, including the README.md and LICENSE.txt
+    2) Compile into a normal jar - not a runnable jar
+    3) Follow JAR instructions
