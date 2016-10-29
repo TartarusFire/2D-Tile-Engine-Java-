@@ -1,0 +1,9 @@
+2D Tile Engine [Java]
+Version 1.0.0 - 10/28/16 - TartarusFire
+=======================================
+Created Blocks.java
+Created Map.java
+Created Hitbox.java
+
+Added GPL 3.0 License to top of all relevant source files.
+Created chagelog.
