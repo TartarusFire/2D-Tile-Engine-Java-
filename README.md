@@ -1,6 +1,7 @@
 # 2D Tile Engine [Java]
 [Easily Convertible]
 A lightweight jar or series of files that allows for a visual display of a map of tiles.
+  >> An engine that returns collsion values while not constraining movment to unit sizes.
 
 # Downloads
 To Be Added
